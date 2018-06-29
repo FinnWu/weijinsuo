@@ -1,3 +1,130 @@
-.container{
-    background-color: #f0f0f0;
+/**
+ * Bootstrap扩展
+ */
+ .btn-itcast {
+    color: #ffffff;
+    background-color: #E92322;
+    border-color:  #E92322;
+  }
+  .btn-itcast:focus,
+  .btn-itcast.focus {
+    color: #ffffff;
+    background-color: #E92322;
+    border-color: #E92322;
+  }
+  .btn-itcast:hover {
+    color: #ffffff;
+    background-color: #E92322;
+    border-color: #E92322;
+  }
+  .btn-itcast:active,
+  .btn-itcast.active,
+  .open > .dropdown-toggle.btn-itcast {
+    color: #ffffff;
+    background-color:#E92322;
+    border-color:#E92322;
+  }
+  .btn-itcast:active:hover,
+  .btn-itcast.active:hover,
+  .open > .dropdown-toggle.btn-itcast:hover,
+  .btn-itcast:active:focus,
+  .btn-itcast.active:focus,
+  .open > .dropdown-toggle.btn-itcast:focus,
+  .btn-itcast:active.focus,
+  .btn-itcast.active.focus,
+  .open > .dropdown-toggle.btn-itcast.focus {
+    color: #ffffff;
+    background-color: #E92322;
+    border-color: #E92322;
+  }
+  .btn-itcast:active,
+  .btn-itcast.active,
+  .open > .dropdown-toggle.btn-itcast {
+    background-image: none;
+  }
+  .btn-itcast.disabled:hover,
+  .btn-itcast[disabled]:hover,
+  fieldset[disabled] .btn-itcast:hover,
+  .btn-itcast.disabled:focus,
+  .btn-itcast[disabled]:focus,
+  fieldset[disabled] .btn-itcast:focus,
+  .btn-itcast.disabled.focus,
+  .btn-itcast[disabled].focus,
+  fieldset[disabled] .btn-itcast.focus {
+    background-color: #fff;
+    border-color: #ccc;
+  }
+  .btn-itcast .badge {
+    color: #fff;
+    background-color: #333;
+  }
+
+
+/*
+    公共样式
+*/
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  }
+
+@font-face {
+    font-family: 'itcast';
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
 }
+
+[class^="icon-"],
+[class*=" icon-"]{
+    font-family: itcast;
+    font-style: normal;
+}
+
+.icon-mobilephone::before{
+    content: "\e908";
+    font-size: 13px;
+}
+.icon-telephone::before {
+    content: "\e909";
+    font-size: 15px;
+}
+  
+.icon-logo::before {
+    content: "\e93e";
+}
+  
+.icon-icon::before {
+    content: "\e920";
+}
+  
+
+/**
+    头部区域
+*/
+#header{
+    height: 200px;
+}
+#header .topbar{
+    height: 40px;
+}
+#header .topbar .container .row div{
+    height: 40px;
+    line-height: 40px;
+}
+#header .topbar .container .row div+div{
+    border-left: 1px solid #c0c0c0;
+}
+
+#header a:hover {
+    text-decoration: none;
+}
+#header a{
+    color: #888;
+    font-size: 12px;
+}
+#header .topbar{
+    border-bottom: 1px solid #c0c0c0;
+}
+#header .btn-itcast{
+    color: rgb(255, 255, 255);
+}
+
